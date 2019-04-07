@@ -1,0 +1,87 @@
+ input, button {
+  padding: 15px;
+  height: 65px;
+  width: 200px;
+  box-sizing: border-box;
+  margin: 10px 8px;
+}
+
+.all {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#left {
+    width: 40%;
+
+}
+#right {
+    width: 40%;
+    
+    
+}
+@keyframes step {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 100px;
+        top: 200px;
+    }
+    100% {
+        left: 200px;
+        top: 200px;
+    }
+}
+
+#block {
+    position:relative;
+    top:0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: step 1s linear 0.2s infinite;
+    transition: top 0.5s linear;
+    
+}
+#block:hover{
+        background-color: yellow;
+        top: 30px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    animation: cat 1s linear 0.3s infinite;
+    position: relative;
+    transform: scale(1.5);
+}
+@keyframes cat {
+    0% {
+        left: 0px;
+        top: 0px;  
+    }
+    15% {
+        left: 70px;
+        top: 100px; 
+    }
+    30% {
+        left: 140px;
+        top: 0px;
+    }
+    45% {
+        left: 210px;
+        top: 100px;
+    }
+    60% {
+        left: 280px;
+        top: 0px;
+    }
+    75% {
+        left: 350px;
+        top: 100px;
+    }
+    90% {
+        left: 420px;
+        top: 0px;
+    }
